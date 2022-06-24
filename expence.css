@@ -1,0 +1,15 @@
+.main-container{
+    margin: 0;
+    padding: 20px;
+    font-family: arial;
+    width: 300px ;
+    border-style:ridge;
+    border-radius: 10px;
+}
+
+.ammount ,.description ,.menu {
+    padding-top: 15px;
+}
+#Description, #expence,#category {
+    border-radius: 5px;
+}
