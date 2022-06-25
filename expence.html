@@ -6,35 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>expence-tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="expence.css">
 </head>
 
 <body>
+    <div id="notify"></div>
     <h1>Welcome</h1>
-    <div class="main-container">
-        <div class="ammount">
-            <label for="ammount">Ammount</label>
-            <input type="text" name="expence" id="expence" placeholder="Expence">
+    <form  class="form" method="POST">
+        <div class="main-container">
+            <h2 class="title">Add Expence</h2>
+            <hr>
+            <div class="ammount">
+                <label for="ammount">Ammount</label>
+                <input type="text" name="expence" id="expence" placeholder="Expence">
+            </div>
     
-        </div>
-       
-        <div class="description">
-            <label for="Description">Description</label>
-            <textarea name="Description" id="Description" placeholder="Description" cols="30" rows="10"></textarea>
+            <div class="description">
+                <label for="Description">Description</label>
+                <textarea name="Description" id="Description" placeholder="Description" cols="30" rows="3"></textarea>
+            </div>
     
+            <div class="menu">
+                <label for="Category">Category</label>
+                <select id="category">
+                    <option value="Food">Food</option>
+                    <option value="Medicine">Medicine</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Education">Education</option>
+                </select>
+            </div>
+            <div class="btn" id="addExpBtn">
+                <button>Add Expence</button>
+            </div>
         </div>
-       
-        <div class="menu">
-            <label for="cars">Category</label>
-            <select id="category">
-                <option value="Food">Food</option>
-                <option value="Medicine">Medicine</option>
-                <option value="Clothing">Clothing</option>
-                <option value="Education">Education</option>
-            </select>
+    </form>
+   
+    
+    <div class="second-container">
+        <div class="expence menu">
+            <p class="mainlist">Ammount</p>
+            <p class="mainlist">Reason</p>
+            <p class="mainlist">Catagory</p>
         </div>
-       
+         <hr>
+         <!--<div class="expence list dynamic">
+            <p class="list">100</p>
+            <p class="list">shoes</p>
+            <p class="list">shopping</p>
+            <i class="fa-solid fa-trash"></i>
+        </div>
+        <div class="expence list dynamic">
+            <p class="list">500</p>
+            <p class="list">shirt</p>
+            <p class="list">shopping</p>
+            <i class="fa-solid fa-trash"></i>
+        </div> -->
     </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+
+    <script src="expence.js"></script>
 </body>
 
 </html>

@@ -6,10 +6,59 @@
     border-style:ridge;
     border-radius: 10px;
 }
-
+.title {
+    margin-left: 70px;
+}
 .ammount ,.description ,.menu {
     padding-top: 15px;
 }
 #Description, #expence,#category {
     border-radius: 5px;
+}
+.second-container {
+    border-style:ridge;
+    border-radius: 10px;
+    width: 55%;
+    margin-top: 20px;
+    position:absolute;
+    left: 370px;
+    top:60px ; 
+}
+
+.expence {
+    display: flex;
+    width: 50%;
+    padding: 0;
+}
+
+.list {
+    margin-right: 100px;
+}
+.mainlist{
+    margin-right: 60px;
+}
+.btn {
+    margin-top: 30px;
+    margin-left: 90px;
+}
+button {
+    border-radius: 5px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.fa-solid {
+    margin-top: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: red;
+}
+#notify {
+    position: absolute;
+    left: 620px;
+    top: 5px;
+    font-family: cursive;
+}
+.trash {
+    border: none;
 }
